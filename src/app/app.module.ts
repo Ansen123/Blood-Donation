@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { AdddonerComponent } from './adddoner/adddoner.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SearchComponent } from './search/search.component';
-import { Router, Routes } from '@angular/router';
+import { Router, RouterModule, Routes } from '@angular/router';
 const  appRoutes: Routes=[
   {
     path:"",component:AdddonerComponent
@@ -25,7 +25,8 @@ const  appRoutes: Routes=[
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
