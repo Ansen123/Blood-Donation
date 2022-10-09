@@ -5,16 +5,33 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AdddonerComponent } from './adddoner/adddoner.component';
 import { NavbarComponent } from './navbar/navbar.component';
-
+import { SearchComponent } from './search/search.component';
+import { Router, RouterModule, Routes } from '@angular/router';
+import { DeleteComponent } from './delete/delete.component';
+const  appRoutes: Routes=[
+  {
+    path:"",component:AdddonerComponent
+  },
+      {
+        path:"search",component:SearchComponent
+    },
+    {
+      path:"delete",component:DeleteComponent
+    }
+  
+]
 @NgModule({
   declarations: [
     AppComponent,
     AdddonerComponent,
-    NavbarComponent
+    NavbarComponent,
+    SearchComponent,
+    DeleteComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
