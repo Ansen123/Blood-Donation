@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SearchComponent } from './search/search.component';
 import { Router, RouterModule, Routes } from '@angular/router';
 import { DeleteComponent } from './delete/delete.component';
+import { ViewAllComponent } from './view-all/view-all.component';
 const  appRoutes: Routes=[
   {
     path:"",component:AdddonerComponent
@@ -17,6 +18,9 @@ const  appRoutes: Routes=[
     },
     {
       path:"delete",component:DeleteComponent
+    },
+    {
+      path:"view-all",component:ViewAllComponent
     }
   
 ]
@@ -26,7 +30,8 @@ const  appRoutes: Routes=[
     AdddonerComponent,
     NavbarComponent,
     SearchComponent,
-    DeleteComponent
+    DeleteComponent,
+    ViewAllComponent
   ],
   imports: [
     BrowserModule,
