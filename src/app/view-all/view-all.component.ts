@@ -9,6 +9,12 @@ export class ViewAllComponent implements OnInit {
 
   constructor() { }
 
+  donor1="Ansen"
+  donor2="Francis"
+  donor3="Pazhanilathu"
+  donor5="Nest"
+  donor4="Digital"
+
   ngOnInit(): void {
   }
 
