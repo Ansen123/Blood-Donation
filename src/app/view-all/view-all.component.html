@@ -8,22 +8,24 @@
                 <thead>
                   <tr>
                     <th scope="col">Name</th>
-                    <th scope="col">Phone Number</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Website</th>
+                    <th scope="col">Phone </th>
+                
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  
+                    <tr *ngFor="let i of donorData">
+                            <td>{{i.name}}</td>
+                           
+                            <td>{{i.email}}</td>
+                            <td>{{i.username}}</td>
+                            <td>{{i.phone}}</td>
+                          </tr>
+
+                     
                 </tbody>
               </table>
-
-
-
-
         </div>
     </div>
-</div>
 
