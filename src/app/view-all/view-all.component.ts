@@ -14,7 +14,7 @@ export class ViewAllComponent implements OnInit {
     fetchData=()=>{
       this.myapi.viewBlood().subscribe(
         (data)=>{
-          this.fetchData=data
+          this.donorData=data
         }
       )
     }
