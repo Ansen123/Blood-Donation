@@ -9,6 +9,8 @@ import { SearchComponent } from './search/search.component';
 import { Router, RouterModule, Routes } from '@angular/router';
 import { DeleteComponent } from './delete/delete.component';
 import { ViewAllComponent } from './view-all/view-all.component';
+import { HttpClientModule } from '@angular/common/http';
+
 const  appRoutes: Routes=[
   {
     path:"",component:AdddonerComponent
@@ -36,7 +38,8 @@ const  appRoutes: Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
