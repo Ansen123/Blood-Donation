@@ -21,7 +21,19 @@ export class AdddonerComponent implements OnInit {
   email=""
 
   readValues=()=>{
-    console.log("Susscess")
+    let data={
+      "name":this.name,
+      "bloodGroup":this.bloodGroup,
+      "dob":this.dob,
+      "lastDonation":this.lastDonation,
+      "inlast":this.inlast,
+      "lastCorona":this.lastCorona,
+      "address":this.address,
+      "pin":this.pin,
+     " mobile":this.mobile,
+      "email":this.email
+    }
+    console.log(data)
   }
 
   ngOnInit(): void {
