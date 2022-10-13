@@ -9,6 +9,21 @@ export class AdddonerComponent implements OnInit {
 
   constructor() { }
 
+  name=""
+  bloodGroup=""
+  dob=""
+  lastDonation=""
+  inlast=""
+  lastCorona=""
+  address=""
+  pin=""
+  mobile=""
+  email=""
+
+  readValues=()=>{
+    console.log("Susscess")
+  }
+
   ngOnInit(): void {
   }
 

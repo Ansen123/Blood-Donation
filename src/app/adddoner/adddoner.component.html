@@ -26,11 +26,11 @@
                 <div class="row g-3">
                     <div class="col col-12 colo-sm-6 col-md-6 col-lg-6 col-xl-6 col-xx-6">
                         <label for="">Name</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="name"[(ngModel)]="name">
                     </div>
                     <div class="col col-12 colo-sm-6 col-md-6 col-lg-6 col-xl-6 col-xx-6">
                         <label for="">Blood Group</label>
-                        <select name="" id="" class="form-control">
+                        <select name="" id="" class="form-control"name="bloodGroup"[(ngModel)]="bloodGroup">
                             <option value="">Select</option>
                             <option value="">A+ve</option>
                             <option value="">B+ve</option>
@@ -44,15 +44,15 @@
                     </div>
                     <div class="col col-12 colo-sm-6 col-md-6 col-lg-6 col-xl-6 col-xx-6">
                         <label for="">Date Of Birth</label>
-                       <input type="month" name="" id="" class="form-control">
+                       <input type="month" name="" id="" class="form-control" name="dob"[(ngModel)]="dob">
                     </div>
                     <div class="col col-12 colo-sm-6 col-md-6 col-lg-6 col-xl-6 col-xx-6">
                         <label for="">Last Blood Donation Date</label>
-                        <input type="month" name="" id="" class="form-control">
+                        <input type="month" name="" id="" class="form-control" name="lastDonation"[(ngModel)]="lastDonation">
                     </div>
                     <div class="col col-12 colo-sm-6 col-md-6 col-lg-6 col-xl-6 col-xx-6">
                         <label for="">In the last six months have you had any of the following?</label>
-                        <select name="" id="" class="form-control">
+                        <select name="" id="" class="form-control" name="inlast"[(ngModel)]="inlast">
                             <option value="">Select</option>
                             <option value="">Tattooing</option>
                             <option value="">Ear Picecing</option>
@@ -62,27 +62,27 @@
                     </div>
                     <div class="col col-12 colo-sm-6 col-md-6 col-lg-6 col-xl-6 col-xx-6">
                         <label for="">last Corona Vaccine</label>
-                        <input type="month" name="" id="" class="form-control">
+                        <input type="month" name="" id="" class="form-control" name=" lastCorona"[(ngModel)]=" lastCorona">
                     </div>
                     <div class="col col-12 colo-sm-6 col-md-6 col-lg-6 col-xl-6 col-xx-6">
                         <label for="">Address</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" name="address"[(ngModel)]="address">
                     </div>
                     <div class="col col-12 colo-sm-6 col-md-6 col-lg-6 col-xl-6 col-xx-6">
                         <label for="">Pin Number</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" name="pin"[(ngModel)]="pin">
                     </div>
                     <div class="col col-12 colo-sm-6 col-md-6 col-lg-6 col-xl-6 col-xx-6">
                         <label for="">Mobile</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" name="mobile"[(ngModel)]="mobile">
                     </div>
                     <div class="col col-12 colo-sm-6 col-md-6 col-lg-6 col-xl-6 col-xx-6">
                         <label for="">Email-Id</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" name="email"[(ngModel)]="email">
                     </div>
                     <div class="col col-12 colo-sm-6 col-md-6 col-lg-6 col-xl-6 col-xx-6">
 
-                        <button class="btn btn-danger">Register</button>
+                        <button class="btn btn-danger" (click="readValues()") >Register</button>
                     </div>
                     
                 </div>
