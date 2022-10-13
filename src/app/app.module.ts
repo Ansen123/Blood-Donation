@@ -10,6 +10,7 @@ import { Router, RouterModule, Routes } from '@angular/router';
 import { DeleteComponent } from './delete/delete.component';
 import { ViewAllComponent } from './view-all/view-all.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 const  appRoutes: Routes=[
   {
